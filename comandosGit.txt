@@ -1,0 +1,14 @@
+
+git init
+git add .
+git commit -m "mi primer commit"
+git remote add origin https://github.com/codigoraul/htmlclases.git
+git push -u origin main
+
+
+
+
+
+pwd -> para ver la ubicación:
+
+/Users/raulriquelmelagos/Documents/CURSO_PROGRAMACION/HTML
