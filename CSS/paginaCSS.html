@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS curso programación</title>
+    <style>
+        p {
+            color: green;
+            font-size: 50px;
+        }
+        
+        .colores {
+            color: yellowgreen;
+        }
+        
+        #parrafo3 {
+            color: blueviolet;
+            background-color: #ddd;
+            padding: 20px;
+            display: inline-flex;
+        }
+        
+        #fondo {
+            background: yellow url('fondo.jpg') repeat center center;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid grey;
+        }
+        
+        table {
+            width: 50%;
+        }
+        
+        table thead {
+            background-color: #282828;
+            color: #fff;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fondo">
+        <p>Esto es un parrafo</p>
+        <p class="colores">Esto es un parrafo2</p>
+        <p id="parrafo3">Esto es el tercer parrafo</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Información2</td>
+                    <td>Información2</td>
+                    <td>Información2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

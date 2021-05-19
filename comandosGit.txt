@@ -3,7 +3,7 @@ git init
 git add .
 git commit -m "mi primer commit"
 git remote add origin https://github.com/codigoraul/htmlclases.git
-git push -u origin main
+git push -u origin master
 
 
 
@@ -19,4 +19,4 @@ git init
 git add .
 git commit -m "mi primer commit"
 git remote add origin https://github.com/codigoraul/cursoprogramacion.git
-git push -u origin main
+git push -u origin master
