@@ -1,0 +1,107 @@
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 970px;
+    background-color: #1b345d;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+#header {
+    background-color: #cf3036;
+    margin-bottom: 21px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#header h1 {
+    color: #c2d6ec;
+    padding: 10px;
+}
+
+#navigation {
+    width: 214px;
+    background-color: #2a7d8c;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+    border-radius: 21px;
+}
+
+#navigation ul li a {
+    color: #6ADDE3;
+    list-style: none;
+}
+
+#navigation ul a {
+    color: #6ADDE3;
+}
+
+#navigation ul li {
+    margin-left: 19px;
+}
+
+#navigation>ul {
+    padding: 19px 0px 21px 10px;
+}
+
+#navigation ul {
+    margin: 0px 0px 0px 10px;
+}
+
+li::marker {
+    color: #C2D6EC;
+}
+
+li a.morado {
+    color: #788EFC !important;
+}
+
+#main_content {
+    width: 691px;
+    background-color: #0e1822;
+    display: inline-block;
+    padding: 17px 23px 16px 21px;
+    vertical-align: top;
+    border-radius: 21px;
+}
+
+#main_content h2 {
+    color: #C2D6EC;
+    line-height: 42px;
+    margin-top: 8PX;
+}
+
+#main_content p {
+    color: #C2D6EC;
+}
+
+.content {
+    margin: 12px 0px 0px 25px;
+}
+
+.content li {
+    color: #C2D6EC;
+    padding-top: 8px;
+}
+
+.content li a {
+    color: #6ADDE3;
+}
+
+.footer {
+    background: #5d6673;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 18px;
+    color: #C2D6EC;
+}
+
+.footer a {
+    color: #6ADDE3;
+}

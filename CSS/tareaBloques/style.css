@@ -1,9 +1,10 @@
 /*CSS reset settings here*/
 
-* {
+
+/* * {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 #wrapper {
     width: 950px;
@@ -36,6 +37,10 @@
     vertical-align: top;
 }
 
+ul.content {
+    margin: 9px 0px 0px 25px;
+}
+
 .subcontents {
     min-height: 200px;
     width: 210px;
@@ -49,4 +54,11 @@
     width: 660px;
     background-color: purple;
     margin-top: 20px;
+}
+
+.footer {
+    background: #5d6673;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 18px;
 }
