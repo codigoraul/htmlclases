@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row centered">
+            <h1>Titulo principal</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <img src="paisaje.jpg" class="img-fluid" width="360px" alt="">
+                <h3>textos</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus ab delectus ipsam odit, corrupti dolorem reprehenderit enim ratione. Eum impedit sint, quidem tempora odio quas itaque enim aperiam maxime!
+
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="paisaje.jpg" width="360px" class="img-fluid" alt="">
+                <h3>texto</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis reiciendis sapiente perspiciatis laudantium. Sapiente error minus hic, ipsum et doloribus eum tempora eveniet perspiciatis atque voluptate quia corrupti temporibus animi.
+            </div>
+            <div class="col-sm-4">
+                <img src="paisaje.jpg" width="360px" class="img-fluid" alt="">
+                <h3>texto</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, velit! A dicta modi amet eveniet odit tempore pariatur sapiente autem distinctio voluptatum ex facilis possimus repudiandae, qui tempora vero itaque!</p>
+            </div>
+
+        </div>
+    </div>
+    <!--container -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Content here -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>

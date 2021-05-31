@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplemente responsive</title>
+</head>
+<style>
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background: grey;
+        padding: 20px 0px 0px 20px;
+    }
+    
+    .content {
+        background: grey;
+        padding: 20px 0px 20px 20px;
+        margin-top: 20px;
+    }
+    
+    .texto1,
+    .texto2,
+    .texto3 {
+        background: rgb(230, 230, 147);
+        width: 100%;
+        padding: 15px 0px 15px 15px;
+        margin-top: 20px;
+    }
+    /* Telefono*/
+    
+    @media only screen and (max-width: 480px) {
+        .texto1,
+        .texto2 {
+            display: none;
+        }
+    }
+    /*tablet*/
+    
+    @media only screen and (min-width:481px) and (max-width: 1023px) {
+        /* we will set these stylings only if the device is a screen with a width of 480px or less */
+        .texto1,
+        .texto3 {
+            display: none;
+        }
+    }
+    /*desktop*/
+    
+    @media only screen and (min-width: 1024px) {
+        /* we will set these stylings only if the device is a screen with a width of 480px or less */
+        .texto2,
+        .texto3 {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>@MediaQuery</h1>
+        </header>
+        <div class="content">
+            <p>CSS uses to @media Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic repudiandae reprehenderit molestiae eligendi alias! Quaerat quisquam nostrum maxime cupiditate illum. Accusantium quis modi iusto nam aut, a eos hic esse!</p>
+        </div>
+        <footer>
+            <p class="texto1">Desktop: Width greater than or equal to 1024px</p>
+            <p class="texto2">Tablet: Width 481px and 1023px </p>
+            <p class="texto3">Phone: Width less than or equal to 480px</p>
+    </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>

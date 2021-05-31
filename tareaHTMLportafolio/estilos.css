@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 970px;
+    margin: 0 auto;
+    font-family: 'PT Sans';
+}
+
+.header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 62%, rgba(241, 241, 241, 1) 100%);
+    padding: 12px 20px;
+}
+
+.header h1 {
+    display: inline-block;
+    width: 40%;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.header p {
+    display: inline;
+    float: right;
+}
+
+.contenido {
+    background: rgb(111, 89, 100);
+    background: radial-gradient(circle, rgba(111, 89, 100, 1) 0%, rgba(29, 13, 17, 1) 100%);
+    padding: 26px 0px 26px 26px;
+}
+
+.foto {
+    width: 406px;
+    border: 3px solid #C0C0C0;
+}
+
+.bio {
+    width: 484px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(218, 203, 217, 1) 100%);
+}
+
+.bio p {
+    padding: 12px;
+    font-size: 15px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.box-1 {
+    display: inline-block;
+    width: 30%;
+    margin-right: 28px;
+    vertical-align: top;
+    background: rgb(254, 254, 254);
+    background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(218, 203, 217, 1) 100%);
+}
+
+.box-1 h2,
+.box-1 h4,
+.bio h2 {
+    background: rgb(180, 180, 183);
+    background: linear-gradient(0deg, rgba(180, 180, 183, 1) 0%, rgba(135, 133, 147, 1) 47%, rgba(138, 136, 149, 1) 55%, rgba(180, 180, 183, 1) 100%);
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.box-1 img {
+    width: 282px;
+}
+
+.box-1 p {
+    padding: 13px 0px 8px 12px;
+}
+
+.box-1 p.tres {
+    min-height: 151px;
+}
+
+img.logitos {
+    width: 44px;
+    padding: 4px;
+}
+
+.boton {
+    text-align: center;
+    margin-bottom: 27px;
+    margin-top: 12px;
+}
+
+.boton a {
+    background: #407D61;
+    color: #fff;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+p.redes,
+p.pie {
+    text-align: center;
+}
+
+p.redes {
+    margin-top: 12px;
+}
+
+p.pie {
+    margin-top: 8px;
+}
+
+p.redes img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.footer {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 62%, rgba(241, 241, 241, 1) 100%);
+    padding-bottom: 12px;
+}

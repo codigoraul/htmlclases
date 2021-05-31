@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex grid inline etc</title>
+    <style>
+        .green {
+            background-color: hsl(99.1, 63.9%, 85.9%);
+            border: 1px solid var(--green--b);
+        }
+        
+        .box {
+            font-size: 2rem;
+            padding: 1rem;
+            display: grid;
+            place-items: center;
+            border-radius: 1rem;
+            border-style: dashed;
+        }
+        
+        .parent {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .ex2 .parent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .white {
+            background-color: white;
+        }
+        
+        .ex2 .box {
+            flex: 1 1 150px;
+            /*  Stretching: */
+            flex: 0 1 150px;
+            /*  No stretching: */
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent white">
+        <div class="box green">1</div>
+        <div class="box green">2</div>
+        <div class="box green">3</div>
+    </div>
+
+
+
+</body>
+
+</html>
