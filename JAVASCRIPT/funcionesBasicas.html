@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Básicas</title>
+    <script>
+        console.log("Ejercicio 1");
+
+        function a1() {
+            return 35;
+        }
+        console.log(a1());
+
+
+        console.log("Ejercicio 2");
+
+        function a() {
+            return 4;
+        }
+        console.log(a() + a());
+
+
+        console.log("Ejercicio 3");
+
+        function a3(b) {
+            return b;
+        }
+        console.log(a3(2) + a(4)); // 2 + 4 = 6
+
+
+        console.log("Ejercicio 4");
+
+        function a4(b) {
+            console.log(b); //console.log(3)
+            return b * 3; // return 3*3 = 9
+        }
+        console.log(a4(3));
+
+        console.log("Ejercicio 5");
+
+        function a5(b) {
+            return b * 4;
+            console.log(b); //No imprime 10 por que return anterior lo saca
+        }
+        console.log(a5(10)); // 40
+
+
+        console.log("Ejercicio 6");
+
+        function a6(b) {
+            if (b < 10) {
+                return 2;
+            } else {
+                return 4;
+            }
+            console.log(b); // devuelve 4
+        }
+        console.log(a6(15));
+
+        console.log("Ejercicio 7");
+
+        function a7(b, c) {
+            return b * c;
+        }
+        console.log(10, 3); // imprime 10 y 3
+        console.log(a7(3, 10)); // toma la funcion a() y multiplica 10 x 3 = 30
+
+        console.log("Ejercicio 8");
+
+        function a(b) {
+            for (var i = 0; i < 10; i++) {
+                console.log(i);
+            }
+            return i;
+        }
+        console.log(3); // imprime 3
+        console.log(4); // imprime 4
+
+        console.log("Ejercicio 9");
+
+        function a9() {
+            for (var i = 0; i < 10; i++) {
+                i = i + 2; // incrementa en 2, 0 + 2 = 2
+                console.log(i); // 2>5>8>9>11
+            }
+        }
+        a9(); // imprime el 2,5,8,9,11
+
+        console.log("Ejercicio 10");
+
+        function a11(b, c) {
+            for (var i = b; i < c; i++) {
+                console.log(i);
+            }
+            return b * c;
+        }
+        a11(0, 10);
+        console.log(a11(0, 10));
+        /*
+                                                                  console.log("Ejercicio 11 = funcion no es llamada");
+
+                                                                  function a() {
+                                                                      for (var i = 0; i < 10; i++) {
+                                                                          for (var j = 0; j < 10; j++) {
+                                                                              console.log(j);
+                                                                          }
+                                                                          console.log(i);
+                                                                      }
+                                                                  }
+
+                                                                  console.log("Ejercicio  12 funcion no es llamada");
+
+                                                                  function a() {
+                                                                      for (var i = 0; i < 10; i++) {
+                                                                          for (var j = 0; j < 10; j++) {
+                                                                              console.log(i, j);
+                                                                          }
+                                                                          console.log(j, i);
+                                                                      }
+                                                                  }
+
+
+                                                                  console.log("Ejercicio 13");
+
+
+                                                                  */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
