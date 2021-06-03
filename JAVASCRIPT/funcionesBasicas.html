@@ -99,34 +99,64 @@
         }
         a11(0, 10);
         console.log(a11(0, 10));
+
+        console.log("Ejercicio 11 = funcion no es llamada");
+
+        function a() {
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    console.log(j);
+                }
+                console.log(i);
+            }
+        }
+
+        console.log("Ejercicio  12 funcion no es llamada");
+
+        function a() {
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    console.log(i, j);
+                }
+                console.log(j, i);
+            }
+        }
+
+
+        console.log("Ejercicio 13");
+        var z = 10;
+
+        function a() {
+            var z = 15;
+            console.log(z);
+        }
+        console.log(z); // debería mostrar 10
+
+
+        console.log("Ejercicio 14");
+        var z = 10;
+
+        function a() {
+            var z = 15;
+            console.log(z);
+        }
+        a(); // llama a la función devuelv 15
+        console.log(z); // el console loge muestra
+
+        console.log("Ejercicio 15");
+
+        var z = 10;
+
+        function a() {
+            var z = 15;
+            console.log(z);
+            return z;
+        }
+        z = a(); // 15, 15
+        console.log(z);
         /*
-                                                                  console.log("Ejercicio 11 = funcion no es llamada");
 
-                                                                  function a() {
-                                                                      for (var i = 0; i < 10; i++) {
-                                                                          for (var j = 0; j < 10; j++) {
-                                                                              console.log(j);
-                                                                          }
-                                                                          console.log(i);
-                                                                      }
-                                                                  }
-
-                                                                  console.log("Ejercicio  12 funcion no es llamada");
-
-                                                                  function a() {
-                                                                      for (var i = 0; i < 10; i++) {
-                                                                          for (var j = 0; j < 10; j++) {
-                                                                              console.log(i, j);
-                                                                          }
-                                                                          console.log(j, i);
-                                                                      }
-                                                                  }
-
-
-                                                                  console.log("Ejercicio 13");
-
-
-                                                                  */
+                                                                                         */
     </script>
 </head>
 
