@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Funciones de Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btn1').click(function() {
+                $('#parrafo1').text("Hola soy el texto");
+            })
+            $('#btn2').click(function() {
+                $('#parrafo2').hide();
+            })
+            $('#btn3').click(function() {
+                $('#parrafo2').show();
+            })
+            $('#btn4').click(function() {
+                $('#parrafo2').toggle();
+            })
+
+            $('#btn5').click(function() {
+                $('#parrafo3').slideDown("slow");
+            })
+            $('#btn5-1').click(function() {
+                $('#parrafo3').slideUp("slow");
+            })
+
+            $('#btn5-2').click(function() {
+                $('#parrafo3').slideToggle("slow");
+            });
+            $('#btn6').click(function() {
+                $('#parrafo4').fadeIn("slow");
+                $('#parrafo4').fadeIn("300");
+            });
+            $('#btn6-1').click(function() {
+                $('#parrafo4').fadeOut("slow");
+                $('#parrafo4').fadeOut("300");
+            });
+            $('#btn7').click(function() {
+                $('#parrafo5').addClass("nuevaClase");
+            });
+            $('#btn7-1').click(function() {
+                $('#parrafo5').removeClass("nuevaClase");
+            });
+            $('#btn8').click(function() {
+                $('#parrafo6').before("Añade este texto despues de parrafo");
+            });
+            $('#btn8-1').click(function() {
+                $('#parrafo6').after("Añade este texto Antes de parrafo");
+            });
+            $('#btn9').click(function() {
+                $('#parrafo7').append("Añade estd texto despues con append");
+            });
+            $('#btn9-1').click(function() {
+                $('#parrafo7').prepend("Añade estd texto antes con prepend");
+            });
+            $('#btn10').click(function() {
+                $('#parrafo8').html("<h3>Añade estd texto antes con HTML</h3>");
+            });
+            $('#btn11').click(function() {
+                $('#w3').attr("href", "https://www.adidas.com");
+            });
+            $('#btn12').click(function() {
+                $('#test1').val("Pato lucas");
+            });
+
+        });
+    </script>
+    <style>
+        .container {
+            width: 900px;
+            margin: auto;
+        }
+        
+        #parrafo3 {
+            display: none;
+        }
+        
+        #parrafo4 {
+            width: 200px;
+            height: 50px;
+            display: none;
+            background-color: red;
+        }
+        
+        .nuevaClase {
+            font-size: 22px;
+            background-color: orange;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- .click
+    .hide --
+    .show --
+    .toggle --
+    .slideDown --
+    .slideUp --
+    .slideToggle --
+    .fadeIn --
+    .fadeOut --
+    .addClass --
+    .before --
+    .after --
+    .append __
+    .html --
+    .attr --
+    .val --
+    .text --
+-->
+    <div class="container">
+        <h2>Función Click y Text</h2>
+        <p id="parrafo1">Click en el boton para llamar al evento Click</p>
+        <button id="btn1"> Click</button>
+        <hr>
+        <h2>Función Hide show y toggle </h2>
+        <p id="parrafo2">Click en el boton para ocultar el parrafo</p>
+        <button id="btn2"> Click hide</button>
+        <button id="btn3"> Click show</button>
+        <button id="btn4"> Click Toggle </button>
+        <hr>
+        <h2>Función slideDown y slideUp</h2>
+        <p id="parrafo3">Click en el boton para llamar al evento Click</p>
+        <button id="btn5"> Click slideDown</button>
+        <button id="btn5-1"> Click slideUp</button>
+        <button id="btn5-2"> Click slideToggle</button>
+        <hr>
+
+        <h2>Función fadeIn y fadeOut</h2>
+        <p id="parrafo4">Click en el boton para llamar al evento Click</p>
+        <button id="btn6"> Click fadeIn</button>
+        <button id="btn6-1"> Click fadeOut</button>
+        <hr>
+        <h2>Función addClass y ..</h2>
+        <p id="parrafo5">Click en el boton para llamar al evento Click</p>
+        <button id="btn7"> Click Añade Clase</button>
+        <button id="btn7-1"> Click quita clase</button>
+        <hr>
+        <h2>Función before y after ..</h2>
+        <p id="parrafo6">Click en el boton para llamar al evento before</p>
+        <button id="btn8"> Click before</button>
+        <button id="btn8-1"> Click after</button>
+        <hr>
+        <h2>Función append </h2>
+        <p id="parrafo7">Click en el boton para llamar al evento Click</p>
+        <button id="btn9"> Click append</button>
+        <button id="btn9-1"> Click prepend</button>
+        <hr>
+        <h2>Función HTML </h2>
+        <p id="parrafo8">Click en el boton para llamar al evento Click HTML</p>
+        <button id="btn10"> Click HTML</button>
+        <button id="btn9-1"> Click ..</button>
+        <hr>
+        <h2>Función attr </h2>
+        <p id="parrafo9">Click <a id="w3" href="https://www.google.cl"> google</a></p>
+        <button id="btn11"> Click HTML</button>
+        <button id="btn11-1"> Click ..</button>
+        <hr>
+        <h2>Función val (cambia el value de un input) </h2>
+
+        <button id="btn12"> Click HTML</button>
+        <p>Input field: <input type="text" id="test1" value="Mickey Mouse"></p>
+        <hr>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>

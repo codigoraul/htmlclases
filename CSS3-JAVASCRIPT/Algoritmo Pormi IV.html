@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo pormi IV</title>
+    <script>
+        console.log('******** Ejercicio 1 *******');
+        contador = 0;
+
+        function mayorQueY(arr, y) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > y) {
+                    contador++;
+                }
+
+            }
+            console.log("Valor mayor que", y + " es: ", +contador);
+        }
+        mayorQueY([4, 2, 5, 3, 1], 1);
+
+
+
+        console.log('******** Ejercicio 2  max min promedio *******');
+
+        function maxMinProm(arr) {
+            var max = arr[0];
+            var min = arr[0];
+            var sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+                if (arr[i] > max) {
+                    max = arr[i]
+                } else if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+
+            console.log("El nro máximo es: " + max);
+            console.log("El nro mínimo es: " + min);
+            console.log("El Suma  es: " + sum);
+
+        }
+        maxMinProm([4, 2, 10, 5, -2, 1]);
+
+        console.log('******** reemplazar negativo por positivo 3 *******');
+        //crea una función que dé como resultado un nuevo array donde los valores negativos
+        // se reemplacen por el texto (string) ‘Dojo’
+        function reemplazarNegativos(array) {
+            var nuevoArray = []; // push()
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    arra
+                } else { // 0 o positivos
+
+                }
+            }
+            return nuevoArray;
+        }
+        console.log(reemplazarNegativos([1, 2, -3, -5, 5]));
+
+        //  4 Dado un array y su respectivo índice, remueve los valores en el rango del índice dado( acortando el array).
+        ////    Por ejemplo, removerRango([20,30,40,50,60,70],2,4)debiera devolver [20,30,70].
+        console.log('******** Remueve los valores *******');
+
+        function removerRango(arr, inicio, fin) {
+
+            arregloNuevo = [0];
+            for (let i = 0; i < array.length; i++) {
+
+
+            }
+        }
+        removerRango([20, 30, 40, 50, 60, 70], 2, 4)
+    </script>
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>

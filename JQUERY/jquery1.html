@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 1 ::</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function() {
+    // tu código jquery aquí
+    $('button').click(function() { // para todos los botones
+        console.log("Mi primer button");
+        alert("click en button");
+    });
+    $('input.enviar4').click(function() { // solo para input con .enviar4
+        console.log("Mi primer jquery");
+        alert("Ya  click desde  input");
+    });
+    $('#enviar3').click(function() { // solo para id #enviar3
+        console.log("Mi primer id#enviar3");
+        alert("Ya  click  input id#Enviar3");
+        console.log($('#parrafo').text())
+        $('#parrafo').text("Esto es un parrafo!")
+    });
+    $('.enviar4').click(function() { // solo para clase .enviar4
+        console.log("Mi primer clase: .enviar4");
+        alert("Ya  click  input clase: Enviar4");
+    });
+    $('.cambiaClase').addClass(otraclase);
+
+    });
+
+    });
+</script>
+<style>
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+    
+    .enviar4 {
+        color: blue;
+    }
+    
+    .otraclase {
+        background-color: yellow;
+        color: white;
+        font-size: 22px;
+    }
+</style>
+
+
+<body>
+
+    <div class="container">
+        <input type="button" value="enviar 1">
+        <button>Button Enviar 2</button>
+        <input type="button" value="Cambia texto" id="enviar3">
+        <input type="button" value="enviar 4" class="enviar4">
+        <p id="parrafo" class="enviar4"> Estop es parrafo</p>
+        <p class="cambiaClase"> Estop es parrafo</p>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("**  ACTIVIDAD  ***");
+
+
+
+
+        console.log("   ****** Actividad +******");
+        console.log("   ****** acti ejer 1  el profe: 9 +******");
+
+        function multiply(x, y) { // Multiplica (2,3)
+            console.log(x); // muestra 2
+            console.log(y); // muestra 3
+        }
+        b = multiply(2, 3); // se pasan parametros 2 y 3
+        console.log(b); // muestra 6, 
+
+        console.log("   ****** acti ejer 2 +******");
+
+        function multiply(x, y) {
+            return x * y; // devuelve 2 * 3  = 6
+        }
+        b = multiply(2, 3);
+        console.log(b); // muestra  6;
+        console.log(multiply(5, 2)); //  muestra 10
+
+        console.log("   ****** acti ejer 3  10 +******");
+
+        var x = [1, 2, 3, 4, 5, 10];
+        for (var i = 0; i < 5; i++) {
+            i = i + 3;
+            console.log(i); // muestra el 3, luego muestra 7
+        }
+        console.log("   ****** acti ejer 4 +******");
+        var x = 15;
+        console.log(x); // muestra e imprime 15
+
+        function awesome() {
+            var x = 10;
+            console.log(x); // muestra 10
+        }
+        console.log(x); //imprime 15
+        awesome(); // imprime10
+        console.log(x); //imprime 15   // OK
+
+        console.log("   ****** acti ejer 5 +******");
+        for (var i = 0; i < 15; i += 2) {
+            console.log(i);
+        }
+
+        console.log("   ****** acti ejer 6 +******");
+        for (var i = 0; i < 3; i++) { // 
+            for (var j = 0; j < 2; j++) {
+
+                console.log(i * j); //0 > 1 >  0 > 2  // ok  
+            }
+        }
+
+        console.log("   ****** acti ejer 7 +******");
+
+        function looping(x, y) { // looping(3,3) / x = 3, y=3
+            for (var i = 0; i < x; i++) { //i =0>1;
+                for (var j = 0; j < x; j++) {
+                    console.log(i * j); // 1ra : 0, >  0, > 0, | 0 , 1, 2 ,0
+                }
+            }
+        }
+        z = looping(3, 3);
+        console.log(z);
+
+        console.log("   ****** acti ejer 8 +******");
+
+        function looping(x, y) { // x = 3, y = 5
+            for (var i = 0; i < x; i++) { // i= 0 | 
+                for (var j = 0; j < y; j++) { // j = 0,
+                    console.log(i * j); // 0 0 0 0 / 0 1 2 3 4 /
+                }
+            }
+            return x * y;
+        }
+        z = looping(3, 5);
+        console.log(z);
+
+        console.log('Ejercicios Parte 2');
+
+
+        function printUpTo(x) {
+            if (x < 0) {
+                console.log('Numero negativo');
+                return false;
+            }
+            for (var i = 1; i <= x; i++) {
+                console.log(i);
+
+            }
+        }
+        printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+        y = printUpTo(-10); // debería imprimir false
+        //console.log(y); // debería imprimir false
+
+
+        console.log('Ejercicios Parte 2 Print Sum');
+
+        function printSum(x) {
+            var sum = 0;
+            //your code here
+            copy
+
+            return sum
+        }
+        y = printSum(255) // debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.
+        console.log(y) // // debería imprimir 32640
+
+        console.log('Ejercicios Parte 2 Print SumArray');
+
+        function printSumArray(x) {
+            var sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                // sum += printSumArray[i];
+            }
+            return sum;
+        }
+        console.log(printSumArray([1, 2, 3])); // debería imprimir 6
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

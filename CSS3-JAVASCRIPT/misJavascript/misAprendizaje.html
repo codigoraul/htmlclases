@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos anidados y etiquetas</title>
+    <script>
+        // loops / ciclos  / bucles
+
+        var alumno = [
+            [10, 3, 4, 7, 5],
+            [10, 5, 2, 7, 4],
+            [10, 6, 3, 8, 6],
+            [10, 7, 9, 7, 5]
+        ];
+        var materias = 0;
+        var sumCal = 0;
+        var reprobado = false;
+        for (var i = 0; i < alumno.length; i++) {
+            // console.log(alumno[i]);
+            for (var j = 0; j < alumno[i].length; j++) {
+                // console.log(alumno[i][j]);
+                if (alumno[i][j] >= 5) {
+                    sumCal += alumno[i][j];
+                    materias++;
+                } else {
+                    reprobado = true;
+                    console.log('reprobado');
+                }
+
+            }
+
+        }
+
+        if (!reprobado) {
+            console.log('Alumno aprobado');
+            console.log(sumCal / materias);
+        } else {
+            console.log('Alumno reprobado por burro');
+        }
+
+        // console.log(materias);
+        // console.log(sumCal);
+        // console.log(sumCal / materias);
+
+        console.log('Ejercicios intercambiar numeros de arreglo');
+        var array = [5, 3, 4, 1];
+        var x = 0;
+        var y = array.length - 1;
+
+        var temp = array[y];
+        array[y] = array[x];
+        array[x] = temp;
+
+        console.log(array);
+        console.log('LEVEL 9 , Challenge 1');
+
+        var number = '';
+        var x = 5;
+        while (x < 10) {
+            number += x;
+            x++
+        }
+        console.log(number);
+
+        console.log('LEVEL 9 , Challenge 5');
+
+        var x = 7;
+        var message = 'Hola';
+        while (x > message.length) {
+            console.log(message + x);
+            x--;
+        }
+        console.log(message); // Hola7, Hola6,Hola5
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

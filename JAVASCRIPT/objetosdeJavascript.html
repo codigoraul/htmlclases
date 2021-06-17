@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos de Javascript</title>
+    <script>
+        function arrayObjeto() {
+
+
+            // Diccionario , cambiamos de[] a {}
+            // diccionario de [] a {} // palabra: definicion
+            var Dany = {
+                nombre: "Daenerys",
+                apellido: "Targaryen",
+                edad: 22,
+                titulos: ['Lady Regnant of the Seven', 'Protector of the Realm']
+
+            };
+            console.log(Dany.nombre, Dany.apellido);
+            console.log(Dany.titulos);
+
+        }
+        console.log(arrayObjeto());
+        console.log("segundo ejemplo:")
+        var dojo = {}; // crea un objeto vacío
+        dojo = {
+                name: 'Coding Dojo', // la propiedad puede almacenar un string
+                number_of_students: 25, // la propiedad puede almacenar un número
+                instructors: ['Andrew', 'Michael', 'Jay', 'Roberto'], // la propiedad puede almacenar arrays
+                location: { // ¡la propiedad puede incluso almacenar otro objeto!
+                    city: 'San Jose',
+                    state: 'CA',
+                    zipcode: 95112
+                }
+            } // accede a las propiedades del objeto con notación de punto (.)
+        console.log(dojo.name, dojo.number_of_students, dojo.instructors, dojo.location);
+
+        console.log(dojo.instructors.push['Felipe']);
+        console.log(dojo.instructors);
+
+        console.log("Arrays de objetos");
+        var glazedDonuts = [{
+            frosting: 'Glazed',
+            style: 'cake',
+            type: 'old fashioned',
+            age: '45',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast raised',
+            type: 'regular',
+            age: '5',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast Otro',
+            type: 'jelly filled',
+            age: '1',
+            time: 'seconds'
+        }];
+        console.log(glazedDonuts[1].style);
+        for (let i = 0; i < glazedDonuts.length; i++) {
+            console.log(glazedDonuts[i].style);
+
+        }
+
+        console.log("Jugando con objetos");
+
+        var users = [{
+            name: "Michael",
+            age: 37
+        }, {
+            name: "John",
+            age: 30
+        }, {
+            name: "David",
+            age: 27
+        }];
+        // ¿Cómo harías print/log de la edad de John?
+        console.log(users[1].age);
+        // ¿Cómo harías print/log del nombre del primer objeto?
+        console.log(users[0].nombre);
+        // ¿Cómo harías print/log del nombre y la edad de cada usuario utilizando un for loop? Tu output debería verse algo como esto
+        for (let i = 0; i < users.length; i++) {
+            console.log(users[i].name);
+            console.log(users[i].age);
+
+        }
+        // ¿Cómo harías para imprimir el nombre de los mayores de edad?
+        for (let i = 0; i < users.length; i++) {
+            if (users.age > 18) {
+                console.log("Edad:" + users[i].name);
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("**  ACTIVIDAD  ***");
+
+
+
+        console.log("   ****** acti ejer 3 profe: 10 +******");
+
+        var x = [1, 2, 3, 4, 5, 10];
+        //x.length = 6; x[x.length-1]; x[0]
+        for (var i = 0; i < 5; i++) { // i=0>3>4>7>8
+            i = i + 3; // i se le suma 3// i = 4+3= 7
+            console.log(i); // muestra el 3, luego muestra 7
+        }
+
+        console.log("   ****** acti ejer 4 profe : 11 +******");
+        var x = 15;
+        console.log(x); // muestra e imprime 15
+
+        function awesome() {
+            let x = 10; // otra variable x
+            console.log(x); // muestra 10
+        }
+
+        console.log(x); //imprime 15
+        awesome(); // imprime10
+        console.log(x); //imprime 15   // OK
+
+        console.log("   ****** acti ejer 5  PROFE : 12 +******");
+        for (var i = 0; i < 15; i += 2) {
+            console.log(i); // RESP: 0, 2,4,6,8,9,10,12,14
+        }
+
+        console.log("   ****** acti ejer 6 PROFE:13 +******");
+        for (var i = 0; i < 3; i++) { // i=0>1>2>3
+
+            for (var j = 0; j < 2; j++) { // j = 0>1>2
+
+                console.log(i * j); // 0 > 0 > 0 > 1 > 0 > 2
+
+            }
+        }
+
+
+
+        console.log("   ****** acti ejer 7 PROFE: 14 ******");
+
+        function looping(x, y) { // x = 3  y = 3(no afecta la funcion)
+
+            for (var i = 0; i < x; i++) { // i=0>1>2
+                for (var j = 0; j < x; j++) { // j=0>1
+                    console.log(i * j); // 0x0
+
+                }
+            }
+        }
+        z = looping(3, 3); // z = undefined , por que no tiene " Return"
+        console.log(z); // 0, 0,0,0,1,2,0,2,4, undefined
+
+
+
+
+        console.log("   ****** acti ejer 8  PROFE 15 ******");
+
+        function looping(x, y) { // x = 3, y = 5
+
+            for (var i = 0; i < x; i++) { // i= 0>1 >2>3
+                for (var j = 0; j < y; j++) { // j = 0>1>2>3>4>5,
+                    console.log(i * j);
+                    // 0, 0, 0, 0, 0, 0, 1,2,3,4,0,2,4,6,8
+                }
+            }
+            return x * y;
+        }
+        z = looping(3, 5); //Z = 15
+        console.log(z);
+        // 0, 0, 0, 0, 0, 0, 1,2,3,4,0,2,4,6,8,15
+
+
+        console.log('Ejercicios Parte 2');
+
+        // MUESTRA DE VARIABLE : PROFE ISRAEL: 16
+        function printUpTo(x) {
+            if (x < 0) {
+                console.log('Numero negativo');
+                return false;
+            }
+
+            for (var i = 1; i <= x; i++) {
+                console.log(i);
+            }
+        }
+        printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+        y = printUpTo(-10); // debería imprimir false
+        console.log(y); // debería imprimir false
+
+        // MUESTRA DE VARIABLE : PROFE ISRAEL: 17
+        //Completa el código de más abajo para que la función imprima enteros (integers) 
+        //de 0 a x y donde cada entero imprima la suma (sum) parcial. Haz que la función entregue la suma final.
+        function printSum(x) {
+            var sum = 0;
+            for (let i = 0; i < x; i++) {
+                console.log(i);
+                sum = sum + i;
+                console.log("Suma Parcial:" + sum);
+
+            }
+            return sum
+        }
+        y = printSum(255) // debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.
+        console.log("Suma Total: " + y) // // debería imprimir 32640
+
+        // MUESTRA DE VARIABLE : PROFE ISRAEL: 18
+        console.log('MUESTRA DE VARIABLE : PROFE ISRAEL: 18');
+
+        function printSumArray(x) { // x =[1,2,3]
+            var sum = 0; // 6
+            for (var i = 0; i < x.length; i++) {
+                //your code here
+                sum = sum + x[i]; // suma = 3 +3 = 6
+            }
+            return sum;
+        }
+        console.log(printSumArray([1, 2, 3])); // debería imprimir 6
+        // MUESTRA DE VARIABLE : PROFE ISRAEL: Bonus
+        // crear funcion que entrege elemento mas grande
+        // ejemplo largestElement([1,30,5,7])
+
+        console.log('MUESTRA DE VARIABLE : PROFE ISRAEL: BONUS');
+
+        function largestElement(arreglo) { // [1, 30, 5, 7];
+            var numMayor = arreglo[0]; // 1
+            for (var i = 0; i < arreglo.length; i++) { // i=0>1>2>4
+                // 30<7   
+                if (numMayor < arreglo[i]) {
+                    numMayor = arreglo[i];
+                }
+            }
+            return numMayor;
+
+        }
+        console.log(largestElement([1, 30, 90, 5, 7]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

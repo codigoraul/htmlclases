@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo III</title>
+    <script>
+        console.log("ejercicio 1");
+
+        function a1(x, y) {
+            return 5;
+        }
+        console.log(a1(5, 5)); // retorna 5  //ok
+
+        console.log("ejercicio 2");
+
+        function a2(x, y) { // x=2 y=2 / x=6 y=8
+            let z = [] //creación de array vacio
+            z.push(x);
+            z.push(y);
+            z.push(5);
+            console.log(z); //[2, 2, 5]
+            return z; //[2, 2, 5]
+        }
+        var b = a2(2, 2);
+        console.log(b); //[2, 2, 5],//[2, 2, 5]
+        console.log(a2(6, 8)); // [6, 8, 5],[6, 8, 5]
+
+        console.log("ejercicio 3");
+
+        function a3(x) { // x = 2
+            z = []; //[] // arreglo vacio; 
+            z.push(x); // añade 2 al array
+            z.pop(); // quita 2 al array (elimina el ultimo elemento)
+            z.push(x); // añade 2
+            z.push(x); // añade 2
+            return z; // [2,2]
+        }
+        var y = a3(2);
+        y.push(5); // Este añade un 5 al arreglo
+        console.log(y);
+
+
+        console.log("ejercicio 4");
+
+        function a4(x) { // [2,3,4,5]
+            if (x[0] < x[1]) { // 2 < 3
+                return true; // retorna true
+            } else {
+                return false;
+            }
+        }
+        b = a4([2, 3, 4, 5])
+        console.log(b);
+
+        console.log("ejercicio 5");
+
+        function a5(x) { // [1, 2, 3, 4]
+            for (var i = 0; i < x.length; i++) { // i <  4
+                if (x[i] > 0) {
+                    x[i] = "Coding"; // Coding, coding, Coding, Coding
+                }
+            }
+            return x;
+        }
+        console.log(a5([1, 2, 3, 4]));
+        console.log("ejercicio 5.profe");
+
+
+
+
+        function elegirAlAzar(array) {
+
+            // var inicio = array[0];
+            // var fin = array[array.length - 1];
+            // math.random(0 y 1)
+
+            var posicion_aleatoria = Math.floor(Math.random() * array.length);
+
+            var apellido = array[posicion_aleatoria];
+            console.log("***El elegido es: " + apellido);
+        }
+        var curso = ["Ramiro", "Sanchez", "Monje",
+            "Jimenez", "Riquelme", "Garay", "Artavia", "Metayer", "Zencovich",
+            "Figueroa", "Palma", "Pollack", "Barria", "Sotomayor", "Cardenas", "Estrada"
+        ];
+        console.log(elegirAlAzar(curso));
+
+
+        console.log("ejercicio 6");
+
+        function a6(x) { // [5, 7, -1, 4]
+            for (var i = 0; i < x.length; i++) { // i=0>1>2>3,   0 < 4 ,  
+                if (x[i] > 5) { // 0 > 5 > 
+                    x[i] = "Coding"; //    [5, Coding, Dojo, 4]
+                } else if (x[i] < 0) { // 5 < 0
+                    x[i] = "Dojo";
+                }
+            }
+            return x; // [5, Coding, Dojo, 4]
+        }
+        console.log(a6([5, 7, -1, 4])) // [5, 'Coding','Dojo',4 ]
+
+
+        console.log("ejercicio 7");
+
+        function a(x) { // a([5,10])
+            if (x[0] > x[1]) { // 5 > 10
+                return x[1];
+            }
+            return 10;
+        }
+
+        b = a([5, 10])
+        console.log(b); // devuelve 10
+
+        console.log("ejercicio 8");
+
+        function sum(x) {
+            sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+                console.log(sum);
+            }
+            return sum;
+        }
+
+        // Parte 2
+
+        //1) Analiza los valores de un array y obtén el promedio (average) de esos valores.
+        console.log("ejercicio 2.1");
+
+        function printAverage(x) { // x = [1, 2, 3]; //x = [2, 5, 8]
+            sumaTotal = 0;
+            for (var i = 0; i < x.length; i++) {
+                sumaTotal = sumaTotal + x[i];
+            }
+            var promedio = sumaTotal / x.length;
+            return promedio;
+        }
+        y = printAverage([1, 2, 3]);
+        console.log(y); // should log 2
+
+        y = printAverage([2, 5, 8]);
+        console.log(y); // should log 5
+
+        console.log("ejercicio 2.2");
+
+        function returnOddArray() {
+            var arreglo = [];
+            for (var i = 1; i <= 255; i += 2) {
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        y = returnOddArray();
+        console.log(y); // should log [1,3,5,...,253,255]
+
+        console.log("ejercicio 2.3");
+        //3) Cuadra cada valor con un array dado, obteniendo el mismo array con valores cambiados..
+        function squareValue(x) {
+
+            sum = 4;
+            for (var i = 0; i < x.length; i++) {
+                if (x[1] == 1) {
+
+                }
+                x[i] = sum + i++;
+
+            }
+            return x;
+        }
+        y = squareValue([1, 2, 3]);
+        console.log(y); // should log [1,4,9]
+
+        y = squareValue([2, 5, 8]);
+        console.log(y); // should log [4,25,64]
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
